@@ -8,7 +8,7 @@
     if (navigator.userAgent.match(/iPhone/i)) {
         location.replace("com.localiza.mobile://");
             //setTimeout(function() {
-                if (document.webkitHidden) {
+                if (!document.webkitHidden) {
                     location.replace("https://itunes.apple.com/app/localiza-hertz/id429739212");
                 }
       }//, 25);}
